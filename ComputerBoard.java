@@ -58,8 +58,8 @@ public class ComputerBoard extends Board {
                 case CRUISER: 
                     if(super.getFleet().updateFleet(ShipType.ST_CRUISER)){
                         for (int i = 0; i <= 9; i++){
-                            if (super.getLayout().get(move.row()).get(i) == CellStatus.CRUISER){
-                                super.getLayout().get(move.row()).set(i, CellStatus.CRUISER);
+                            if (super.getLayout().get(move.row()).get(i) == CellStatus.CRUISER_HIT){
+                                super.getLayout().get(move.row()).set(i, CellStatus.CRUISER_SUNK);
                             }
                         }
                         for (ArrayList<CellStatus> nRow : super.getLayout()) {
