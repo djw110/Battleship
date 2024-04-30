@@ -106,6 +106,7 @@ public abstract class Board {
         }
         catch(FileNotFoundException e){
             System.out.println(String.format("%s is not a valid input file", fileName));
+            System.exit(0);
         }
 
     }
