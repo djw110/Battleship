@@ -1,5 +1,5 @@
 /**
- * Destroyer Class. Extends Ship. Size = 3.
+ * Sub Class. Extends Ship. Size = 3.
  */
 public class Sub extends Ship {
 
